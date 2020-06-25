@@ -1,0 +1,453 @@
+/* Контейнер */
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 768px;
+
+  overflow: hidden;
+}
+
+
+
+/* Фон */
+
+.elipse {
+  width: 810px;
+  position: absolute;
+  bottom: -150px;
+  right: -300px;
+
+  z-index: -1;
+}
+
+.man {
+  width: 440px;
+  position: absolute;
+  bottom: -20px;
+  right: 18px;
+
+  z-index: -1;
+}
+
+.bg__img_header {
+  position: absolute;
+}
+
+.brackets, .grid, .img_copy, .div1, .div2, .img_copy_1024  {
+  top: 50%;
+  left: 50%;
+
+  transition: 7s;
+  z-index: -2;
+}
+
+.div2 {
+  width: 3.4%;
+  transform: rotate(-35deg);
+}
+
+.img_copy_1024 {
+  display: none;
+}
+
+
+/* Меню */
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 10px;
+  order: 1;
+}
+
+.nav__list {
+  display: flex;
+
+  color: #1f1f24;
+
+  cursor: pointer;
+  transition: .2s;
+}
+
+.nav__list_b {
+  display: none;
+  max-width: 300px;
+  width: 100%;
+  position: relative;
+
+  border: none;
+
+  color: #1f1f24;
+
+  cursor: pointer;
+  transition: .2s;
+}
+
+.list__list {
+  display: flex;
+}
+
+.item__link {
+  margin-right: 34px;
+
+  transition: .5s;
+}
+
+.item__link:hover {
+  text-decoration: underline;
+  color: #fc557c;
+}
+
+.phone {
+  margin-right: 28px;
+
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.request {
+  border: 1px solid #f82370;
+  padding: 12px 39px;
+
+  background: none;
+
+  color: #f53f4f;
+
+  transition: .5s;
+}
+
+.request:hover {
+  background-color: #f53f4f;
+  color: #fff;
+
+}
+
+.request__p {
+  display: none;
+}
+
+
+
+/* Заголовок */
+
+.header__heading  {
+  order: 2;
+}
+
+.heading {
+  max-width: 200px;
+  margin-bottom: 23px;
+  margin-left: 10px;
+
+  font-size: 80px;
+  font-weight: 900;
+  color: #1f1f24;
+}
+
+.special {
+  margin-bottom: 45px;
+  margin-left: 8px;
+
+  font-size: 25px;
+  color: #8993ad;
+}
+
+.info {
+  display: inline-block;
+  border: 1px solid #ff4e2e;
+  padding: 22px 70px;
+
+  background-color: #ff4e2e;
+  color: #fff;
+
+  font-size: 18px;
+
+  transition: .5s;
+}
+
+.info:hover {
+  background: none;
+  color: #ff4e2e;
+}
+
+
+
+/* Адаптив */
+
+@media (min-width: 1025px) {
+  .elipse {
+    width: 920px;
+    bottom: -134px;
+    right: -114px;
+  }
+
+  .man {
+    bottom: -20px;
+    right: 220px;
+  }
+
+  .header__heading {
+    margin-top: 185px;
+  }
+
+  .heading {
+    margin-bottom: 18px;
+  }
+
+  .info {
+    padding: 18px 70px;
+    margin-left: 7px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .man {
+    right: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__nav {
+    align-items: flex-start;
+    height: 313px;
+  }
+
+  .img_copy_1024 {
+    display:block;
+  }
+
+  .div1 {
+    display: none;
+  }
+
+  .list__list {
+    display: inline-block;
+  }
+
+  .nav__list {
+    display: inline-block;
+
+    margin-top: 7px;
+    margin-left: 15px;
+  }
+
+  .nav__list_b {
+    display: block;
+    width: 45px;
+    height: 32px;
+    position: relative;
+
+    background: linear-gradient(to left bottom, #ff8f5a, #ff2f96);
+  }
+
+  .nav__list_b::before {
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 7px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    background-color: #fff;
+  }
+
+  .nav__list_b::after {
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 7px;
+    position: absolute;
+    top: 19px;
+    left: 0;
+
+    background-color: #fff;
+  }
+
+  .item__link {
+    display: inline-block;
+    margin-top: 35px;
+    margin-right: 0;
+
+    border-bottom: 1px sloid #333;
+  }
+
+  .heading {
+    font-size: 54px;
+  }
+
+  .images {
+    flex-direction: column;
+  }
+
+  .phone__address {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .header__heading {
+    margin: 0 7px;
+  }
+
+  .info {
+    padding: 23px 95px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .img_copy_1024 {
+    display: none;
+  }
+
+  .header__container {
+    height: auto;
+  }
+
+  .phone__address {
+    margin-top: 3px;
+    margin-right: 15px;
+  }
+
+  .header__nav {
+    padding: 30px 0;
+  }
+
+  .phone {
+    margin-right: 43px;
+  }
+
+  .man {
+    width: 224px;
+    bottom: 181px;
+  }
+
+  .elipse {
+    width: 431px;
+    bottom: 122px;
+    right: -74px;
+  }
+
+  .header__heading {
+    width: 100%;
+    text-align: center;
+
+    margin: 155px 0 0;
+
+    background-color: #fff;
+  }
+
+  .heading {
+    max-width: 80%;
+
+    margin: 30px auto 15px;
+
+    font-size: 30px;
+  }
+
+  .special {
+    max-width: 80%;
+    width: 100%;
+
+    margin: 0 auto 9px;
+
+    font-size: 16px;
+  }
+
+  .info {
+    margin: 0;
+    padding: 17px 75px;
+
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .phone__container {
+    width: 26px;
+    height: 26px;
+    position: relative;
+
+    border: 1px solid transparent;
+    border-radius: 50%;
+
+    background: linear-gradient(to top, #ff8f5a, #ff2f96);
+  }
+
+  .request__p {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+
+    font-size: 12px;
+
+    background-color: #fff;
+  }
+
+  .phone {
+    font-size: 18px;
+  }
+
+  .item__link {
+    font-size: 11px;
+  }
+
+  .nav__list_b {
+    width: 24px;
+    height: 18px;
+  }
+
+  .nav__list_b::after {
+    width: 24px;
+    height: 4px;
+    top: 11px;
+  }
+
+  .nav__list_b::before {
+    width: 24px;
+    height: 4px;
+    top: 3px;
+  }
+
+
+  .phone__none {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__nav {
+    max-width: 310px;
+    margin: 0 auto;
+
+    padding-top: 23px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 750px) {
+  .phone__container {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+}

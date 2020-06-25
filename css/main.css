@@ -1,0 +1,544 @@
+/* Секция с "моими навыками" */
+
+.i__doing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 88px 0;
+}
+
+.head {
+  font-size: 54px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  margin: 100px auto;
+
+  color: #8993ad;
+  font-size: 20px;
+}
+
+.container__image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+
+  margin: 15px;
+
+  text-align: center;
+}
+
+.tools-and-utensils {
+  width: 80px;
+  height: 74px;
+
+  margin-bottom: 30px;
+
+  background-repeat: no-repeat;
+  background-image: url(image/tools-and-utensils.jpg);
+}
+
+.responsive {
+  width: 79px;
+  height: 74px;
+
+  margin-bottom: 30px;
+
+  background-repeat: no-repeat;
+  background-image: url(image/responsive.jpg);
+}
+
+.programming {
+  width: 74px;
+  height: 74px;
+
+  margin-bottom: 30px;
+
+  background-repeat: no-repeat;
+  background-image: url(image/programming.jpg);
+}
+
+.coding {
+  width: 74px;
+  height: 74px;
+
+  margin-bottom: 30px;
+
+  background-repeat: no-repeat;
+  background-image: url(image/coding.jpg);
+}
+
+
+
+/* Секция с "моим портфолио" */
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 112px 0 100px;
+
+  background-color: #fbfbfb;
+}
+
+.viewport__container {
+  position: relative;
+}
+
+.viewport {
+  width: 1180px;
+  height: 550px;
+  position: relative;
+
+  overflow-x: hidden;
+}
+
+.images__port {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+
+  margin-bottom: 100px;
+  margin-top: 100px;
+
+  color: #8993ad;
+  font-size: 20px;
+  transition: .5s;
+}
+
+.arrow {
+  width: 61px;
+  height: 61px;
+  position: absolute;
+
+  border: 0 solid #fff;
+  border-radius: 50%;
+
+  background-image: url(image/arrow.png);
+  background-color: none;
+
+  transition: .2s;
+}
+
+.arrow:hover {
+  box-shadow: 0 0 6px 6px #90909055;
+}
+
+.none__rewers {
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+
+  z-index: 2;
+}
+
+.prewiev {
+  width: 455px;
+}
+
+.sign {
+  margin-top: 20px;
+
+  font-size: 24px;
+  letter-spacing: 0.05em;
+}
+
+.rewers {
+  transform: translateY(-50%);
+  right: -15px;
+
+  transform: rotate(180deg);
+}
+
+.slide {
+  margin: 39px 10px 61px;
+}
+
+.slide__button {
+  display: none;
+}
+
+.slide__img {
+  margin-left: 20px;
+}
+
+
+
+/* Секция с "моими ценами" */
+
+.price {
+  position: relative;
+
+  padding: 85px 100px;
+
+  background: linear-gradient(to top right, #ff8f5a, #ff2f96);
+
+  color: #fff;
+}
+
+.price__container {
+  max-width: 1170px;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.price__heading {
+  margin-bottom: 50px;
+
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.reference {
+  font-size: 18px;
+}
+
+.grid_p {
+  position: absolute;
+  top: 260px;
+  left: 245px;
+}
+
+.brackets_p1 {
+  position: absolute;
+  top: 262px;
+  left: 1768px;
+}
+
+.brackets_p2 {
+  position: absolute;
+  top: 63px;
+  left: 127px;
+  transform: rotate(45deg);
+}
+
+.div_p {
+  position: absolute;
+  top: 303px;
+  left: 1425px;
+}
+
+.copy_p {
+  position: absolute;
+  top: 80px;
+  left: 1658px;
+}
+
+
+
+/* Адаптив */
+
+@media (max-width: 1500px) {
+  .brackets_p2 {
+    top: 20px;
+  }
+
+  .grid_p {
+    top: 280px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .viewport {
+    width: 930px;
+    height: 430px;
+    position: relative;
+
+    margin-top: 9px;
+
+    overflow: hidden;
+  }
+  .images__port {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin: 0;
+    padding: 0;
+
+    transition: 1s;
+  }
+
+  .slide__button {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+
+    margin: 40px 8px;
+    border: none;
+    border-radius: 50%;
+
+    background-color: #ebebeb;
+
+    transition: 1s;
+  }
+
+  .container__image:first-child {
+    margin-bottom: 70px;
+  }
+
+  .image {
+    max-width: 267px;
+
+    margin: 0 57px;
+
+  }
+
+  .images {
+    margin-top: 0;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .button1 {
+    background-color: #ff4e2e;
+  }
+
+  .slide__img {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1300px) {
+  .slide {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  .images {
+    margin: 75px auto;
+
+    font-size: 21px;
+  }
+
+  .prewiev {
+    width: 370px;
+    height: 291px;
+  }
+
+  .sign {
+    margin-top: 27px;
+
+    font-size: 20px;
+    letter-spacing: normal;
+  }
+
+  .none__rewers {
+    top: 45%;
+    left: -10px;
+  }
+
+  .rewers {
+    top: 40%;
+    right: -22px;
+  }
+
+  .price {
+    padding-top: 80px;
+    padding-bottom: 87px;
+  }
+
+  .price__container {
+    max-width: 970px;
+
+    padding: 0 19px;
+  }
+
+  .reference {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .brackets_p2 {
+    width: 30px;
+    position: absolute;
+    top: 23px;
+    left: 155px;
+  }
+
+  .grid_p, .brackets_p1 {
+    display: none;
+  }
+
+  .div_p {
+    width: 54px;
+    top: 306px;
+    left: 514px;
+  }
+
+  .copy_p {
+    top: 292px;
+    left: 876px;
+  }
+
+  .viewport {
+    width: 780px;
+  }
+
+  .head {
+    margin-bottom: 89px;
+  }
+
+  .price {
+    padding: 80px 40px 91px;
+  }
+}
+
+@media (max-width: 800px) {
+  .i__doing {
+    padding-top: 42px;
+
+    padding-bottom: 46px;
+  }
+
+  .head {
+    text-align: center;
+
+    font-size: 30px;
+
+  }
+
+  .i__doing__heading, .portfolio__heading {
+    margin-bottom: 45px;
+  }
+
+  .tools-and-utensils {
+    width: 63px;
+    height: 58px;
+    margin-bottom: 19px;
+    background-size: cover;
+  }
+
+  .responsive {
+    width: 60px;
+    height: 55px;
+    margin-bottom: 25px;
+    background-size: cover;
+  }
+
+  .programming {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    background-size: cover;
+  }
+
+  .coding {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 22px;
+    background-repeat: no-repeat;
+    background-image: url(image/coding.jpg);
+    background-size: cover;
+  }
+  .brackets_p2, .grid_p, .brackets_p1, .div_p, .copy_p {
+    display: none;
+  }
+
+  .container__image {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 16px;
+  }
+
+  .image {
+    margin-bottom: 55px;
+  }
+
+  .container__image:first-child {
+    margin: 0;
+  }
+
+  .images {
+    margin: 0;
+  }
+
+  .portfolio {
+    padding: 50px 20px;
+  }
+
+  .viewport {
+    width: 310px;
+    height: 290px;
+
+    margin-top: 0;
+  }
+
+  .prewiev {
+    width: 310px;
+    height: 249px;
+    margin-right: 0px;
+  }
+
+  .sign {
+    margin-top: 3px;
+
+    font-size: 16px;
+  }
+
+  .slide {
+    margin: 0 0 12px;
+  }
+
+  .images__port {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+  }
+
+  .slide__button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .price__heading {
+    margin-bottom: 36px;
+
+    font-size: 28px;
+    line-height: 1.38;
+  }
+
+  .reference {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .price {
+    padding: 50px 20px 41px;
+  }
+
+  .slide__img {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
